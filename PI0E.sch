@@ -15110,24 +15110,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <label x="256.54" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SCK" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO11/SCLK"/>
-<wire x1="25.4" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
-<label x="17.78" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="43.18" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
-<label x="38.1" y="149.86" size="1.778" layer="95"/>
-<pinref part="IC1" gate="G$1" pin="SCK"/>
-<junction x="43.18" y="149.86"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="A" pin="CLK"/>
-<wire x1="213.36" y1="182.88" x2="208.28" y2="182.88" width="0.1524" layer="91"/>
-<label x="205.74" y="182.88" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="8"/>
@@ -15600,6 +15582,24 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <pinref part="U$1" gate="G$1" pin="GPIO16"/>
 <wire x1="73.66" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
 <label x="76.2" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<wire x1="43.18" y1="149.86" x2="38.1" y2="149.86" width="0.1524" layer="91"/>
+<label x="38.1" y="149.86" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="SCK"/>
+<junction x="43.18" y="149.86"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO11/SCLK"/>
+<wire x1="25.4" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
+<label x="17.78" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="A" pin="CLK"/>
+<wire x1="213.36" y1="182.88" x2="208.28" y2="182.88" width="0.1524" layer="91"/>
+<label x="205.74" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
