@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14729,6 +14729,10 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <part name="C11" library="rcl" deviceset="C-US" device="C0603" value="100uF"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
+<part name="3V3A5" library="supply1" deviceset="+3V3" device="" value="3V3A"/>
+<part name="3V3A7" library="supply1" deviceset="+3V3" device="" value="3V3A"/>
 </parts>
 <sheets>
 <sheet>
@@ -14807,6 +14811,10 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <instance part="C11" gate="G$1" x="248.92" y="129.54"/>
 <instance part="SUPPLY13" gate="GND" x="248.92" y="116.84"/>
 <instance part="SUPPLY4" gate="GND" x="180.34" y="124.46"/>
+<instance part="SUPPLY16" gate="GND" x="82.042" y="144.78"/>
+<instance part="SUPPLY24" gate="GND" x="81.28" y="157.48"/>
+<instance part="3V3A5" gate="G$1" x="81.28" y="172.72"/>
+<instance part="3V3A7" gate="G$1" x="78.74" y="160.02"/>
 </instances>
 <busses>
 </busses>
@@ -14974,6 +14982,18 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <pinref part="TLV1137" gate="A" pin="ADJ/GND"/>
 <junction x="200.66" y="129.54"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ENC28J60" gate="G$1" pin="VSSRX"/>
+<wire x1="73.66" y1="147.32" x2="82.042" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="SUPPLY16" gate="GND" pin="GND"/>
+<wire x1="82.042" y1="147.32" x2="82.296" y2="147.32" width="0.1524" layer="91"/>
+<junction x="82.042" y="147.32"/>
+</segment>
+<segment>
+<pinref part="ENC28J60" gate="G$1" pin="VSSTX"/>
+<wire x1="73.66" y1="160.02" x2="81.28" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="SUPPLY24" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="2" class="0">
@@ -15162,17 +15182,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </net>
 <net name="VIN-" class="0">
 <segment>
-<pinref part="B2" gate="G$1" pin="+"/>
-<wire x1="190.5" y1="53.34" x2="182.88" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="53.34" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="B1" gate="G$1" pin="+"/>
-<wire x1="182.88" y1="66.04" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="66.04" x2="190.5" y2="66.04" width="0.1524" layer="91"/>
-<junction x="182.88" y="66.04"/>
-<label x="190.5" y="66.04" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <wire x1="129.54" y1="180.34" x2="124.46" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="180.34" x2="124.46" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="177.8" x2="129.54" y2="177.8" width="0.1524" layer="91"/>
@@ -15182,19 +15191,19 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <pinref part="U$2" gate="G$1" pin="VIN-1"/>
 <pinref part="U$2" gate="G$1" pin="VIN-2"/>
 </segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="-"/>
+<wire x1="200.66" y1="81.28" x2="205.74" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="81.28" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="B2" gate="G$1" pin="-"/>
+<wire x1="205.74" y1="76.2" x2="205.74" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="53.34" x2="200.66" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="76.2" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
+<junction x="205.74" y="76.2"/>
+<label x="205.74" y="76.2" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VIN+" class="0">
-<segment>
-<pinref part="B2" gate="G$1" pin="-"/>
-<wire x1="200.66" y1="53.34" x2="208.28" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="53.34" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="B1" gate="G$1" pin="-"/>
-<wire x1="208.28" y1="66.04" x2="208.28" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="81.28" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="66.04" x2="200.66" y2="66.04" width="0.1524" layer="91"/>
-<label x="203.2" y="66.04" size="1.778" layer="95" rot="R180"/>
-<junction x="208.28" y="66.04"/>
-</segment>
 <segment>
 <label x="160.02" y="187.96" size="1.778" layer="95" rot="R180"/>
 <wire x1="160.02" y1="185.42" x2="160.02" y2="182.88" width="0.1524" layer="91"/>
@@ -15205,6 +15214,17 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <junction x="160.02" y="182.88"/>
 <pinref part="U$2" gate="G$1" pin="VIN+1"/>
 <pinref part="U$2" gate="G$1" pin="VIN+2"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="+"/>
+<wire x1="190.5" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="81.28" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="B2" gate="G$1" pin="+"/>
+<wire x1="185.42" y1="66.04" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="53.34" x2="190.5" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="66.04" x2="190.5" y2="66.04" width="0.1524" layer="91"/>
+<junction x="185.42" y="66.04"/>
+<label x="185.42" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX+" class="0">
@@ -15342,6 +15362,18 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <pinref part="3V3A4" gate="G$1" pin="+3V3"/>
 <pinref part="ENC28J60" gate="G$1" pin="VDDOSC"/>
 <junction x="73.66" y="137.16"/>
+</segment>
+<segment>
+<pinref part="ENC28J60" gate="G$1" pin="VDDTX"/>
+<wire x1="73.66" y1="167.64" x2="81.28" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="167.64" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="3V3A5" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="ENC28J60" gate="G$1" pin="VDDRX"/>
+<wire x1="73.66" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="154.94" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="3V3A7" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="N$18" class="0">
