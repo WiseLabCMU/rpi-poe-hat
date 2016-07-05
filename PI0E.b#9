@@ -5340,8 +5340,13 @@ design rules under a new name.</description>
 <wire x1="52.832" y1="38.227" x2="52.324" y2="38.735" width="0.254" layer="16"/>
 <wire x1="52.324" y1="38.735" x2="49.975" y2="38.735" width="0.254" layer="16"/>
 <wire x1="49.975" y1="38.735" x2="49.01" y2="37.77" width="0.254" layer="16"/>
-<wire x1="20.755" y1="12.145" x2="22.955" y2="11.245" width="0" layer="19" extent="1-1"/>
-<wire x1="17.255" y1="8.645" x2="16.891" y2="12.954" width="0" layer="19" extent="1-1"/>
+<via x="19.177" y="10.16" extent="1-16" drill="0.6"/>
+<via x="19.177" y="8.382" extent="1-16" drill="0.6"/>
+<via x="20.955" y="10.16" extent="1-16" drill="0.6"/>
+<via x="20.955" y="8.382" extent="1-16" drill="0.6"/>
+<wire x1="19.177" y1="8.382" x2="20.955" y2="8.382" width="0" layer="19" extent="1-1"/>
+<wire x1="17.255" y1="8.645" x2="19.177" y2="8.382" width="0" layer="19" extent="1-1"/>
+<wire x1="20.755" y1="12.145" x2="20.955" y2="10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$4" pad="8"/>

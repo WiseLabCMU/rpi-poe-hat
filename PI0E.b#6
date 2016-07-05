@@ -5138,8 +5138,8 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="19.993" y="19.023" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R5" library="rcl" package="R0603" value="2.32k" x="28.7528" y="4.6355" rot="R270"/>
-<element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="-0.889" y="-24.003">
-<attribute name="TP_SIGNAL_NAME" value="" x="-0.889" y="-24.003" size="1.778" layer="27" display="off"/>
+<element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="21.59" y="3.556">
+<attribute name="TP_SIGNAL_NAME" value="" x="21.59" y="3.556" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -5982,7 +5982,8 @@ design rules under a new name.</description>
 <signal name="N$40">
 <contactref element="ENC28J60" pad="6"/>
 <contactref element="TP1" pad="TP"/>
-<wire x1="-0.889" y1="-24.003" x2="21.405" y2="6.445" width="0" layer="19" extent="1-1"/>
+<wire x1="21.405" y1="6.445" x2="21.405" y2="3.741" width="0.254" layer="1"/>
+<wire x1="21.405" y1="3.741" x2="21.59" y2="3.556" width="0.254" layer="1"/>
 </signal>
 </signals>
 <errors>
@@ -5994,8 +5995,8 @@ design rules under a new name.</description>
 <approved hash="5,1,3a2c5158a452dea7"/>
 <approved hash="5,1,a48bd259b3abcc10"/>
 <approved hash="5,1,8f77e055c87faedc"/>
-<approved hash="4,1,d5bdf1d17b2384ec"/>
 <approved hash="4,1,2e78089ffcadba52"/>
+<approved hash="4,1,d5bdf1d17b2384ec"/>
 </errors>
 </board>
 </drawing>
