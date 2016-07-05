@@ -180,7 +180,7 @@
 <wire x1="6.604" y1="21.336" x2="0.254" y2="21.336" width="0.254" layer="21"/>
 <wire x1="0.254" y1="21.336" x2="0.254" y2="16.256" width="0.254" layer="21"/>
 <text x="0.254" y="0.762" size="0.8128" layer="51" font="fixed">C Palmer</text>
-<text x="78.4606" y="1.2827" size="0.8128" layer="16" font="vector" rot="MR0">cpalmer '16</text>
+<text x="78.4606" y="1.2827" size="1.27" layer="16" font="vector" rot="MR0">cpalmer '16</text>
 <rectangle x1="65.24625" y1="1.35255" x2="65.41135" y2="1.36525" layer="21"/>
 <rectangle x1="67.69735" y1="1.35255" x2="67.84975" y2="1.36525" layer="21"/>
 <rectangle x1="58.54065" y1="1.36525" x2="58.79465" y2="1.37795" layer="21"/>
