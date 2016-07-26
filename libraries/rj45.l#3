@@ -177,14 +177,14 @@
 <wire x1="6.97" y1="6.87" x2="6.97" y2="-6.87" width="0.127" layer="51"/>
 <wire x1="6.97" y1="-6.87" x2="-6.97" y2="-6.89" width="0.127" layer="51"/>
 <wire x1="-6.97" y1="-6.89" x2="-6.97" y2="6.89" width="0.127" layer="51"/>
-<smd name="+VDC@1" x="-11.43" y="-9" dx="1.25" dy="4" layer="1"/>
-<smd name="+VDC@2" x="-8.89" y="-9" dx="1.25" dy="4" layer="1"/>
+<smd name="+VDC1" x="-11.43" y="-9" dx="1.25" dy="4" layer="1"/>
+<smd name="+VDC2" x="-8.89" y="-9" dx="1.25" dy="4" layer="1"/>
 <smd name="-VDC" x="8.89" y="-9" dx="1.25" dy="4" layer="1"/>
 <smd name="ADJ" x="11.43" y="-9" dx="1.25" dy="4" layer="1"/>
-<smd name="VIN+@1" x="11.43" y="9" dx="1.25" dy="4" layer="1"/>
-<smd name="VIN+@2" x="8.89" y="9" dx="1.25" dy="4" layer="1"/>
-<smd name="VIN-@1" x="-8.89" y="9" dx="1.25" dy="4" layer="1"/>
-<smd name="VIN-@2" x="-11.43" y="9" dx="1.25" dy="4" layer="1"/>
+<smd name="VIN+1" x="11.43" y="9" dx="1.25" dy="4" layer="1"/>
+<smd name="VIN+2" x="8.89" y="9" dx="1.25" dy="4" layer="1"/>
+<smd name="VIN-1" x="-8.89" y="9" dx="1.25" dy="4" layer="1"/>
+<smd name="VIN-2" x="-11.43" y="9" dx="1.25" dy="4" layer="1"/>
 <text x="-3" y="0" size="1.27" layer="25">Ag9800</text>
 <polygon width="0" layer="39">
 <vertex x="-14" y="-6"/>
@@ -192,35 +192,66 @@
 <vertex x="14" y="2"/>
 <vertex x="14" y="-6"/>
 </polygon>
-<text x="-13.335" y="-8.255" size="1.27" layer="21">1</text>
+</package>
+<package name="FA-238">
+<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.127" layer="21"/>
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="GND1" x="-1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
+<smd name="GND2" x="1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
+</package>
+<package name="R0603">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-0.889" y="0.889" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="RJCSEX38X01X">
+<circle x="-6.35" y="-4.99" radius="1.625" width="0.127" layer="45"/>
+<circle x="6.35" y="-4.99" radius="1.625" width="0.127" layer="45"/>
+<wire x1="-9.4" y1="5.695" x2="9.4" y2="5.695" width="0.127" layer="21"/>
+<wire x1="9.4" y1="5.695" x2="9.4" y2="-8.725" width="0.127" layer="21"/>
+<wire x1="9.4" y1="-8.725" x2="-9.4" y2="-8.725" width="0.127" layer="21"/>
+<wire x1="-9.4" y1="-8.725" x2="-9.4" y2="5.695" width="0.127" layer="21"/>
+<smd name="1" x="3.57" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="2" x="2.55" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="3" x="1.53" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="4" x="0.501" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="5" x="-0.501" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="6" x="-1.503" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="7" x="-2.55" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="8" x="-3.57" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="P$4" x="8.66" y="-5" dx="2.5" dy="3.9" layer="1"/>
+<smd name="P$5" x="-8.66" y="-5" dx="2.5" dy="3.9" layer="1"/>
+<text x="-9.386" y="7.634" size="1.27" layer="21">&gt; Name</text>
+<text x="-9.386" y="-10.366" size="1.27" layer="21">&gt; Value</text>
+<hole x="-6.35" y="-4.99" drill="3.25"/>
+<hole x="6.35" y="-4.99" drill="3.25"/>
+<wire x1="-9.525" y1="6.985" x2="-9.525" y2="-8.89" width="0.127" layer="39"/>
+<wire x1="-9.525" y1="-8.89" x2="9.525" y2="-8.89" width="0.127" layer="39"/>
+<wire x1="9.525" y1="-8.89" x2="9.525" y2="6.985" width="0.127" layer="39"/>
+<wire x1="9.525" y1="6.985" x2="-9.525" y2="6.985" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
-<symbol name="AG9800">
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="VIN-" x="-12.7" y="-5.08" length="middle"/>
-<pin name="VIN+" x="-12.7" y="5.08" length="middle"/>
-<pin name="ADJ" x="12.7" y="5.08" length="middle" rot="R180"/>
-<pin name="+VDC" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="-VDC" x="12.7" y="-5.08" length="middle" rot="R180"/>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="AG9800">
-<gates>
-<gate name="G$1" symbol="AG9800" x="63.5" y="-7.62"/>
-</gates>
-<devices>
-<device name="AG9800M" package="AG9800M">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>

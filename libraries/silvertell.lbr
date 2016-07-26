@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -170,9 +170,7 @@
 <packages>
 <package name="AG9800M">
 <wire x1="14" y1="9" x2="14" y2="-9" width="0.127" layer="21"/>
-<wire x1="14" y1="-9" x2="-14" y2="-9" width="0.127" layer="21"/>
 <wire x1="-14" y1="-9" x2="-14" y2="9" width="0.127" layer="21"/>
-<wire x1="-14" y1="9" x2="14" y2="9" width="0.127" layer="21"/>
 <wire x1="-6.97" y1="6.89" x2="6.97" y2="6.87" width="0.127" layer="51"/>
 <wire x1="6.97" y1="6.87" x2="6.97" y2="-6.87" width="0.127" layer="51"/>
 <wire x1="6.97" y1="-6.87" x2="-6.97" y2="-6.89" width="0.127" layer="51"/>
@@ -188,6 +186,12 @@
 <text x="-3" y="0" size="1.27" layer="25">Ag9800</text>
 <text x="-13.335" y="-8.255" size="1.27" layer="21">1</text>
 <rectangle x1="-14" y1="-6" x2="14" y2="2" layer="41"/>
+<wire x1="-14" y1="9" x2="-12.5" y2="9" width="0.127" layer="21"/>
+<wire x1="-8" y1="9" x2="8" y2="9" width="0.127" layer="21"/>
+<wire x1="14" y1="9" x2="12.5" y2="9" width="0.127" layer="21"/>
+<wire x1="-14" y1="-9" x2="-12.5" y2="-9" width="0.127" layer="21"/>
+<wire x1="-8" y1="-9" x2="8" y2="-9" width="0.127" layer="21"/>
+<wire x1="14" y1="-9" x2="12.5" y2="-9" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>

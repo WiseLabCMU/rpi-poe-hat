@@ -201,14 +201,14 @@
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="VIN-" x="-12.7" y="-5.08" length="middle"/>
-<pin name="VIN+" x="-12.7" y="5.08" length="middle"/>
+<pin name="VIN-@2" x="-12.7" y="-5.08" length="middle"/>
+<pin name="VIN+@1" x="-12.7" y="5.08" length="middle"/>
 <pin name="ADJ" x="12.7" y="5.08" length="middle" rot="R180"/>
-<pin name="+VDC" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="-VDC" x="12.7" y="-5.08" length="middle" rot="R180"/>
-<pin name="P$1" x="-12.7" y="2.54" length="middle"/>
-<pin name="P$2" x="-12.7" y="-2.54" length="middle"/>
-<pin name="P$3" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="-VDC" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="+VDC@1" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="VIN+@2" x="-12.7" y="2.54" length="middle"/>
+<pin name="VIN-@1" x="-12.7" y="-2.54" length="middle"/>
+<pin name="+VDC@2" x="12.7" y="-2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -219,11 +219,11 @@
 <devices>
 <device name="AG9800M" package="AG9800M">
 <connects>
-<connect gate="G$1" pin="+VDC" pad="P1 P2"/>
-<connect gate="G$1" pin="-VDC" pad="P3"/>
+<connect gate="G$1" pin="+VDC@1" pad="P3"/>
+<connect gate="G$1" pin="-VDC" pad="P1 P2"/>
 <connect gate="G$1" pin="ADJ" pad="P4"/>
-<connect gate="G$1" pin="VIN+" pad="P5 P6"/>
-<connect gate="G$1" pin="VIN-" pad="P7 P8"/>
+<connect gate="G$1" pin="VIN+@1" pad="P5 P6"/>
+<connect gate="G$1" pin="VIN-@2" pad="P7 P8"/>
 </connects>
 <technologies>
 <technology name=""/>

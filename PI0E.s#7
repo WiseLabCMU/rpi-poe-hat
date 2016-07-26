@@ -17672,7 +17672,7 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <instance part="R11" gate="G$1" x="127" y="109.22"/>
 <instance part="U$2" gate="G$1" x="144.78" y="175.26"/>
 <instance part="U$3" gate="G$1" x="276.86" y="132.08"/>
-<instance part="T1" gate="G$1" x="243.84" y="66.04" rot="R180"/>
+<instance part="T1" gate="G$1" x="243.84" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -17938,13 +17938,13 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <junction x="177.8" y="71.12"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="N$1" class="0">
 <segment>
 <pinref part="B2" gate="G$1" pin="AC1"/>
 <wire x1="213.36" y1="48.26" x2="195.58" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="48.26" x2="213.36" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="T1" gate="G$1" pin="RXCT"/>
 <wire x1="213.36" y1="58.42" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="TCT"/>
 </segment>
 </net>
 <net name="VIN-" class="0">
@@ -18133,9 +18133,9 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <junction x="73.66" y="162.56"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="TD-"/>
 <wire x1="266.7" y1="78.74" x2="261.62" y2="78.74" width="0.1524" layer="91"/>
 <label x="266.7" y="78.74" size="1.778" layer="95"/>
+<pinref part="T1" gate="G$1" pin="RX+"/>
 </segment>
 </net>
 <net name="RD+" class="0">
@@ -18149,9 +18149,9 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <junction x="73.66" y="152.4"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="RD+"/>
 <wire x1="266.7" y1="53.34" x2="261.62" y2="53.34" width="0.1524" layer="91"/>
 <label x="266.7" y="53.34" size="1.778" layer="95"/>
+<pinref part="T1" gate="G$1" pin="TX-"/>
 </segment>
 </net>
 <net name="!CE1" class="0">
@@ -18278,9 +18278,9 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <junction x="73.66" y="149.86"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="RD-"/>
 <wire x1="266.7" y1="63.5" x2="261.62" y2="63.5" width="0.1524" layer="91"/>
 <label x="266.7" y="63.5" size="1.778" layer="95"/>
+<pinref part="T1" gate="G$1" pin="TX+"/>
 </segment>
 </net>
 <net name="TD+" class="0">
@@ -18293,9 +18293,9 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <junction x="73.66" y="165.1"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="TD+"/>
 <wire x1="266.7" y1="68.58" x2="261.62" y2="68.58" width="0.1524" layer="91"/>
 <label x="266.7" y="68.58" size="1.778" layer="95"/>
+<pinref part="T1" gate="G$1" pin="RX-"/>
 </segment>
 </net>
 <net name="TCT" class="0">
@@ -18314,9 +18314,9 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <label x="109.22" y="167.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="TCT"/>
 <wire x1="266.7" y1="73.66" x2="261.62" y2="73.66" width="0.1524" layer="91"/>
 <label x="266.7" y="73.66" size="1.778" layer="95"/>
+<pinref part="T1" gate="G$1" pin="RXCT"/>
 </segment>
 </net>
 <net name="RX+" class="0">
@@ -18326,9 +18326,9 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <label x="177.8" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="RX+"/>
 <wire x1="220.98" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
 <label x="220.98" y="53.34" size="1.778" layer="95"/>
+<pinref part="T1" gate="G$1" pin="TD-"/>
 </segment>
 </net>
 <net name="RX-" class="0">
@@ -18338,9 +18338,9 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <label x="177.8" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="RX-"/>
 <wire x1="220.98" y1="63.5" x2="226.06" y2="63.5" width="0.1524" layer="91"/>
 <label x="220.98" y="63.5" size="1.778" layer="95"/>
+<pinref part="T1" gate="G$1" pin="TD+"/>
 </segment>
 </net>
 <net name="TX+" class="0">
@@ -18350,9 +18350,9 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <label x="177.8" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="TX+"/>
 <wire x1="220.98" y1="68.58" x2="226.06" y2="68.58" width="0.1524" layer="91"/>
 <label x="220.98" y="68.58" size="1.778" layer="95"/>
+<pinref part="T1" gate="G$1" pin="RD-"/>
 </segment>
 </net>
 <net name="TX-" class="0">
@@ -18362,19 +18362,19 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <label x="177.8" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="T1" gate="G$1" pin="TX-"/>
 <wire x1="226.06" y1="78.74" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
 <label x="220.98" y="78.74" size="1.778" layer="95"/>
+<pinref part="T1" gate="G$1" pin="RD+"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$7" class="0">
 <segment>
-<pinref part="T1" gate="G$1" pin="TXCT"/>
 <pinref part="B2" gate="G$1" pin="AC2"/>
 <wire x1="195.58" y1="58.42" x2="195.58" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="63.5" x2="210.82" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="63.5" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="73.66" x2="226.06" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="T1" gate="G$1" pin="RCT"/>
 </segment>
 </net>
 </nets>
