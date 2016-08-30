@@ -17056,13 +17056,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <smd name="P7" x="-8.89" y="9" dx="1.25" dy="4" layer="1"/>
 <smd name="P8" x="-11.43" y="9" dx="1.25" dy="4" layer="1"/>
 <text x="-3" y="0" size="1.27" layer="25">Ag9800</text>
-<polygon width="0" layer="39">
-<vertex x="-14" y="-6"/>
-<vertex x="-14" y="2"/>
-<vertex x="14" y="2"/>
-<vertex x="14" y="-6"/>
-</polygon>
 <text x="-13.335" y="-8.255" size="1.27" layer="21">1</text>
+<rectangle x1="-14" y1="-6" x2="14" y2="2" layer="41"/>
 </package>
 </packages>
 <symbols>

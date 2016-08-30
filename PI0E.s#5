@@ -16877,9 +16877,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <packages>
 <package name="AG9800M">
 <wire x1="14" y1="9" x2="14" y2="-9" width="0.127" layer="21"/>
-<wire x1="14" y1="-9" x2="-14" y2="-9" width="0.127" layer="21"/>
 <wire x1="-14" y1="-9" x2="-14" y2="9" width="0.127" layer="21"/>
-<wire x1="-14" y1="9" x2="14" y2="9" width="0.127" layer="21"/>
 <wire x1="-6.97" y1="6.89" x2="6.97" y2="6.87" width="0.127" layer="51"/>
 <wire x1="6.97" y1="6.87" x2="6.97" y2="-6.87" width="0.127" layer="51"/>
 <wire x1="6.97" y1="-6.87" x2="-6.97" y2="-6.89" width="0.127" layer="51"/>
@@ -16895,6 +16893,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <text x="-3" y="0" size="1.27" layer="25">Ag9800</text>
 <text x="-13.335" y="-8.255" size="1.27" layer="21">1</text>
 <rectangle x1="-14" y1="-6" x2="14" y2="2" layer="41"/>
+<wire x1="-14" y1="9" x2="-12.5" y2="9" width="0.127" layer="21"/>
+<wire x1="-8" y1="9" x2="8" y2="9" width="0.127" layer="21"/>
+<wire x1="14" y1="9" x2="12.5" y2="9" width="0.127" layer="21"/>
+<wire x1="-14" y1="-9" x2="-12.5" y2="-9" width="0.127" layer="21"/>
+<wire x1="-8" y1="-9" x2="8" y2="-9" width="0.127" layer="21"/>
+<wire x1="14" y1="-9" x2="12.5" y2="-9" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -17360,10 +17364,7 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <package name="RJCSEX38X01X">
 <circle x="-6.35" y="-4.99" radius="1.625" width="0.127" layer="45"/>
 <circle x="6.35" y="-4.99" radius="1.625" width="0.127" layer="45"/>
-<wire x1="-9.4" y1="5.695" x2="9.4" y2="5.695" width="0.127" layer="21"/>
-<wire x1="9.4" y1="5.695" x2="9.4" y2="-8.725" width="0.127" layer="21"/>
 <wire x1="9.4" y1="-8.725" x2="-9.4" y2="-8.725" width="0.127" layer="21"/>
-<wire x1="-9.4" y1="-8.725" x2="-9.4" y2="5.695" width="0.127" layer="21"/>
 <smd name="1" x="3.57" y="4.99" dx="0.61" dy="3.05" layer="1"/>
 <smd name="2" x="2.55" y="4.99" dx="0.61" dy="3.05" layer="1"/>
 <smd name="3" x="1.53" y="4.99" dx="0.61" dy="3.05" layer="1"/>
@@ -17374,14 +17375,18 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <smd name="8" x="-3.57" y="4.99" dx="0.61" dy="3.05" layer="1"/>
 <smd name="P$4" x="8.66" y="-5" dx="2.5" dy="3.9" layer="1"/>
 <smd name="P$5" x="-8.66" y="-5" dx="2.5" dy="3.9" layer="1"/>
-<text x="-9.386" y="7.634" size="1.27" layer="21">&gt; Name</text>
-<text x="-9.386" y="-10.366" size="1.27" layer="21">&gt; Value</text>
 <hole x="-6.35" y="-4.99" drill="3.25"/>
 <hole x="6.35" y="-4.99" drill="3.25"/>
 <wire x1="-9.525" y1="6.985" x2="-9.525" y2="-8.89" width="0.127" layer="39"/>
 <wire x1="-9.525" y1="-8.89" x2="9.525" y2="-8.89" width="0.127" layer="39"/>
 <wire x1="9.525" y1="-8.89" x2="9.525" y2="6.985" width="0.127" layer="39"/>
 <wire x1="9.525" y1="6.985" x2="-9.525" y2="6.985" width="0.127" layer="39"/>
+<wire x1="9.4" y1="5.7" x2="4.1" y2="5.7" width="0.127" layer="21"/>
+<wire x1="-9.4" y1="5.7" x2="-4.1" y2="5.7" width="0.127" layer="21"/>
+<wire x1="-9.4" y1="-8.7" x2="-9.4" y2="-7.15" width="0.127" layer="21"/>
+<wire x1="-9.4" y1="5.7" x2="-9.4" y2="-2.9" width="0.127" layer="21"/>
+<wire x1="9.4" y1="-8.7" x2="9.4" y2="-7.15" width="0.127" layer="21"/>
+<wire x1="9.4" y1="5.7" x2="9.4" y2="-2.9" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>

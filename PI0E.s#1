@@ -18160,18 +18160,13 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
 <junction x="119.38" y="109.22"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="109.22" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
 <label x="106.68" y="99.06" size="1.778" layer="95"/>
-<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="104.14" x2="106.68" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
 <junction x="119.38" y="104.14"/>
 <junction x="106.68" y="104.14"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="!CE!/GPIO7"/>
-<wire x1="73.66" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
-<label x="78.74" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RD-" class="0">
@@ -18289,6 +18284,11 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="109.22" x2="132.08" y2="101.6" width="0.1524" layer="91"/>
 <label x="132.08" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="!CE!/GPIO7"/>
+<wire x1="73.66" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
+<label x="78.74" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

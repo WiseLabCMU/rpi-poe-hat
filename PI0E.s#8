@@ -385,32 +385,6 @@ by exp-project-lbr.ulp</description>
 </library>
 <library name=" ENC28J60-QFN">
 <packages>
-<package name="RJCSEX38X01X">
-<smd name="5" x="-0.501" y="4.99" dx="0.61" dy="3.05" layer="1"/>
-<smd name="4" x="0.501" y="4.99" dx="0.61" dy="3.05" layer="1"/>
-<smd name="3" x="1.53" y="4.99" dx="0.61" dy="3.05" layer="1"/>
-<smd name="6" x="-1.503" y="4.99" dx="0.61" dy="3.05" layer="1"/>
-<smd name="2" x="2.55" y="4.99" dx="0.61" dy="3.05" layer="1"/>
-<smd name="7" x="-2.55" y="4.99" dx="0.61" dy="3.05" layer="1"/>
-<smd name="1" x="3.57" y="4.99" dx="0.61" dy="3.05" layer="1"/>
-<circle x="-6.35" y="-4.99" radius="1.625" width="0.127" layer="45"/>
-<circle x="6.35" y="-4.99" radius="1.625" width="0.127" layer="45"/>
-<smd name="LEDB+" x="-5.72" y="5.81" dx="0.61" dy="3.05" layer="1"/>
-<smd name="8" x="-3.57" y="4.99" dx="0.61" dy="3.05" layer="1"/>
-<smd name="LEDA+" x="6.99" y="5.81" dx="0.61" dy="3.05" layer="1"/>
-<smd name="LEDA-" x="5.72" y="5.81" dx="0.61" dy="3.05" layer="1"/>
-<smd name="LEDB-" x="-6.99" y="5.81" dx="0.61" dy="3.05" layer="1"/>
-<smd name="P$4" x="8.66" y="-5" dx="2.5" dy="3.9" layer="1"/>
-<smd name="P$5" x="-8.66" y="-5" dx="2.5" dy="3.9" layer="1"/>
-<wire x1="-9.4" y1="5.695" x2="9.4" y2="5.695" width="0.127" layer="21"/>
-<wire x1="9.4" y1="5.695" x2="9.4" y2="-8.725" width="0.127" layer="21"/>
-<wire x1="9.4" y1="-8.725" x2="-9.4" y2="-8.725" width="0.127" layer="21"/>
-<wire x1="-9.4" y1="-8.725" x2="-9.4" y2="5.695" width="0.127" layer="21"/>
-<text x="-9.386" y="7.634" size="1.27" layer="21">&gt; Name</text>
-<hole x="-6.35" y="-4.99" drill="3.25"/>
-<hole x="6.35" y="-4.99" drill="3.25"/>
-<text x="-9.386" y="-10.366" size="1.27" layer="21">&gt; Value</text>
-</package>
 <package name="FA-238">
 <wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
@@ -450,26 +424,6 @@ chip</description>
 </package>
 </packages>
 <symbols>
-<symbol name="RJCSE538001">
-<wire x1="-10.16" y1="22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
-<wire x1="10.16" y1="22.86" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
-<pin name="1" x="-15.24" y="20.32" length="middle"/>
-<pin name="2" x="-15.24" y="15.24" length="middle"/>
-<pin name="3" x="-15.24" y="10.16" length="middle"/>
-<pin name="4" x="-15.24" y="5.08" length="middle"/>
-<pin name="5" x="-15.24" y="0" length="middle"/>
-<pin name="6" x="-15.24" y="-5.08" length="middle"/>
-<pin name="7" x="-15.24" y="-10.16" length="middle"/>
-<pin name="8" x="-15.24" y="-15.24" length="middle"/>
-<pin name="LEDA+" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="LEDA-" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="LEDB+" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="LEDB-" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<text x="-10.16" y="23.114" size="1.27" layer="95">&gt;Name</text>
-<text x="-10.16" y="-20.32" size="1.27" layer="96">&gt;Value</text>
-</symbol>
 <symbol name="XTAL">
 <wire x1="-1.27" y1="2.54" x2="1.397" y2="2.54" width="0.4064" layer="94"/>
 <wire x1="1.397" y1="2.54" x2="1.397" y2="-2.54" width="0.4064" layer="94"/>
@@ -498,33 +452,6 @@ chip</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RJCSEX38X01X">
-<description>ethernet port, 6339191-5, from TE Connectivity.</description>
-<gates>
-<gate name="G$1" symbol="RJCSE538001" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RJCSEX38X01X">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="LEDA+" pad="LEDA+"/>
-<connect gate="G$1" pin="LEDA-" pad="LEDA-"/>
-<connect gate="G$1" pin="LEDB+" pad="LEDB+"/>
-<connect gate="G$1" pin="LEDB-" pad="LEDB-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FA-238">
 <gates>
 <gate name="G$1" symbol="XTAL" x="0" y="0"/>
@@ -17518,6 +17445,76 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="rj45">
+<packages>
+<package name="RJCSEX38X01X">
+<circle x="-6.35" y="-4.99" radius="1.625" width="0.127" layer="45"/>
+<circle x="6.35" y="-4.99" radius="1.625" width="0.127" layer="45"/>
+<wire x1="-9.4" y1="5.695" x2="9.4" y2="5.695" width="0.127" layer="21"/>
+<wire x1="9.4" y1="5.695" x2="9.4" y2="-8.725" width="0.127" layer="21"/>
+<wire x1="9.4" y1="-8.725" x2="-9.4" y2="-8.725" width="0.127" layer="21"/>
+<wire x1="-9.4" y1="-8.725" x2="-9.4" y2="5.695" width="0.127" layer="21"/>
+<smd name="1" x="3.57" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="2" x="2.55" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="3" x="1.53" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="4" x="0.501" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="5" x="-0.501" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="6" x="-1.503" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="7" x="-2.55" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="8" x="-3.57" y="4.99" dx="0.61" dy="3.05" layer="1"/>
+<smd name="P$4" x="8.66" y="-5" dx="2.5" dy="3.9" layer="1"/>
+<smd name="P$5" x="-8.66" y="-5" dx="2.5" dy="3.9" layer="1"/>
+<text x="-9.386" y="7.634" size="1.27" layer="21">&gt; Name</text>
+<text x="-9.386" y="-10.366" size="1.27" layer="21">&gt; Value</text>
+<hole x="-6.35" y="-4.99" drill="3.25"/>
+<hole x="6.35" y="-4.99" drill="3.25"/>
+<wire x1="-9.525" y1="6.985" x2="-9.525" y2="-8.89" width="0.127" layer="39"/>
+<wire x1="-9.525" y1="-8.89" x2="9.525" y2="-8.89" width="0.127" layer="39"/>
+<wire x1="9.525" y1="-8.89" x2="9.525" y2="6.985" width="0.127" layer="39"/>
+<wire x1="9.525" y1="6.985" x2="-9.525" y2="6.985" width="0.127" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RJ45">
+<wire x1="-7.62" y1="20.32" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-20.32" x2="7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-20.32" x2="7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="-7.62" y2="20.32" width="0.254" layer="94"/>
+<pin name="8" x="12.7" y="17.78" length="middle" rot="R180"/>
+<pin name="7" x="12.7" y="12.7" length="middle" rot="R180"/>
+<pin name="6" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="5" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="4" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="3" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="2" x="12.7" y="-12.7" length="middle" rot="R180"/>
+<pin name="1" x="12.7" y="-17.78" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RJCSEX38X01X">
+<gates>
+<gate name="G$1" symbol="RJ45" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RJCSEX38X01X" package="RJCSEX38X01X">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17531,7 +17528,7 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <part name="U$1" library="RPI-Zero" deviceset="RPI-ZERO" device=""/>
 <part name="B1" library="rectifier" deviceset="MB*S" device="" technology="4" value="MB6S"/>
 <part name="B2" library="rectifier" deviceset="MB*S" device="" technology="4" value="MB6S"/>
-<part name="U$4" library=" ENC28J60-QFN" deviceset="RJCSEX38X01X" device=""/>
+<part name="U$4" library="rj45" deviceset="RJCSEX38X01X" device="RJCSEX38X01X"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
@@ -17604,7 +17601,7 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <instance part="U$1" gate="G$1" x="48.26" y="48.26"/>
 <instance part="B1" gate="G$1" x="195.58" y="81.28" rot="R180"/>
 <instance part="B2" gate="G$1" x="195.58" y="53.34" rot="R180"/>
-<instance part="U$4" gate="G$1" x="160.02" y="76.2" rot="R180"/>
+<instance part="U$4" gate="G$1" x="160.02" y="73.66"/>
 <instance part="P+1" gate="1" x="83.82" y="93.98"/>
 <instance part="SUPPLY2" gate="GND" x="83.82" y="71.12"/>
 <instance part="P+2" gate="1" x="167.64" y="190.5" rot="MR0"/>
@@ -17910,23 +17907,23 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <net name="N$5" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="8"/>
-<wire x1="175.26" y1="91.44" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="91.44" x2="180.34" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="91.44" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="7"/>
-<wire x1="180.34" y1="86.36" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="86.36" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="AC2"/>
 <wire x1="180.34" y1="86.36" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
 <junction x="180.34" y="86.36"/>
-<junction x="175.26" y="86.36"/>
+<junction x="172.72" y="86.36"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="4"/>
-<wire x1="175.26" y1="71.12" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="71.12" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="71.12" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="5"/>
-<wire x1="177.8" y1="76.2" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="76.2" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="71.12" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="AC1"/>
 <wire x1="195.58" y1="71.12" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
@@ -18317,7 +18314,7 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <net name="RX+" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="55.88" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="55.88" x2="180.34" y2="55.88" width="0.1524" layer="91"/>
 <label x="177.8" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18329,7 +18326,7 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <net name="RX-" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="60.96" x2="180.34" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="60.96" x2="180.34" y2="60.96" width="0.1524" layer="91"/>
 <label x="177.8" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18341,7 +18338,7 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <net name="TX+" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="3"/>
-<wire x1="175.26" y1="66.04" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="66.04" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
 <label x="177.8" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18353,7 +18350,7 @@ Updated by  Dan Xu 2014-07-08&lt;br&gt;
 <net name="TX-" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="6"/>
-<wire x1="175.26" y1="81.28" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="81.28" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
 <label x="177.8" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
