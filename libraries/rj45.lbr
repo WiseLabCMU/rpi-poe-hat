@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -171,7 +171,7 @@
 <package name="RJCSEX38X01X">
 <circle x="-6.35" y="-4.99" radius="1.625" width="0.127" layer="45"/>
 <circle x="6.35" y="-4.99" radius="1.625" width="0.127" layer="45"/>
-<wire x1="9.4" y1="-8.725" x2="-9.4" y2="-8.725" width="0.127" layer="21"/>
+<wire x1="9.4" y1="-8.725" x2="-9.4" y2="-8.725" width="0.127" layer="25"/>
 <smd name="1" x="3.57" y="4.99" dx="0.61" dy="3.05" layer="1"/>
 <smd name="2" x="2.55" y="4.99" dx="0.61" dy="3.05" layer="1"/>
 <smd name="3" x="1.53" y="4.99" dx="0.61" dy="3.05" layer="1"/>
@@ -194,6 +194,7 @@
 <wire x1="-9.4" y1="5.7" x2="-9.4" y2="-2.9" width="0.127" layer="21"/>
 <wire x1="9.4" y1="-8.7" x2="9.4" y2="-7.15" width="0.127" layer="21"/>
 <wire x1="9.4" y1="5.7" x2="9.4" y2="-2.9" width="0.127" layer="21"/>
+<text x="-5.08" y="-7.62" size="1.27" layer="25">&gt;Name</text>
 </package>
 </packages>
 <symbols>
