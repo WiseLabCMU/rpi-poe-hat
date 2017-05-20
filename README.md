@@ -15,9 +15,11 @@ Give your RPi-0 ethernet and Power-ver-Ethernet (POE).  The hat uses the ENC28J6
 
 For the latest Raspbian image, go to https://www.raspberrypi.org/downloads/raspbian/. 
 
-RPI0E.sch - Eagle CAD schematic for the hat.
-RPI0E.brd - Eagle CAD board for the hat.
-bom.xlsx - Spreadsheet with bill of materials
-datasheets - datasheets for the board components, as well as some part drawings.
+## Files and Directories
+
+`hardware/RPI0E.sch` - Eagle CAD schematic for the hat.
+`hardware/RPI0E.brd` - Eagle CAD board for the hat.
+`hardware/bom.xlsx` - Spreadsheet with bill of materials
+`hardware/datasheets/` - datasheets for the board components, as well as some part drawings.
 
 For information on EEPROM configuration visit https://github.com/raspberrypi/hats .
