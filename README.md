@@ -10,6 +10,12 @@ Give your RPi-0 ethernet and Power-ver-Ethernet (POE).  The hat uses the ENC28J6
 
 ![PoE Hat bottom view](docs/assets/poe-hat-bottom.png)
 
+### Jumpers
+
+Placing a 0603 jumper across J1 pulls the EEPROM WP line high, preventing writes.
+
+J2 can be used to choose a chip select on the SPI bus. By default, CS0 is connected by a trace under one of the jumpers. To change it, cut the trace with a hobby knife and place a 0603 jumper across the right-most pads in the previous picture
+
 
 ## Configuring your RPi
 
